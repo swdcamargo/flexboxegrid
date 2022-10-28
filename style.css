@@ -55,7 +55,7 @@
 .gridContainer{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-areas: "mainContent sidebarContent";
+    grid-template-areas: "mainContent sidebarContent" "gridContainer";
     padding: 20px;
     flex: 1 0 auto;
 }
@@ -84,12 +84,22 @@
     border-color: black;
     opacity: 0.7;
 }
+.categoryCardMax{
+    border: 2px solid transparent;
+    grid-template-areas: "mainContent" "sidebarContent";
+    
+    
+}
+.categoryCardMax:hover{
+    border-color: black;
+}
 .mainContent{
     display:flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
     grid-area: "mainContent";
+   
 }
 
 .mainCategoryCardTitle{
